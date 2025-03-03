@@ -14,6 +14,10 @@ get("/rock") do
 
   if comp_move = "rock"
     outcome = "tied"
+  elseif comp_move == "paper"
+    outcome = "lost"
+  else 
+    outcome = "scissors"
 end
 
   "
