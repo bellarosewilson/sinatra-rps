@@ -12,25 +12,17 @@ get("/rock") do
   moves = ["rock","paper","scissors"]
   comp_move = moves.sample
 
-  if comp_move = "rock"
-    outcome = "tied"
-  elseif comp_move == "paper"
-    outcome = "lost"
-  else 
-    outcome = "scissors"
-end
-
   "
   <h2>  
   We played Rock!
   </h2>
 
    <h2>  
-  They played #{comp_move}!
+  They played #{comp_move}+!
   </h2>
 
    <h2>  
-  We #{outcome}!
+  We tied!
   </h2>
   "
 end
@@ -42,7 +34,7 @@ get("/paper") do
   </h2>
 
    <h2>  
-  They played paper!
+  They played #{comp_move}+!
   </h2>
 
    <h2>  
@@ -57,7 +49,7 @@ get("/scissors") do
   </h2>
 
    <h2>  
-  They played scissors!
+  They played #{comp_move}+!
   </h2>
 
    <h2>  
