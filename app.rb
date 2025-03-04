@@ -24,7 +24,3 @@ end
 get ("/paper") do
   erb(:giraffe)
 end
-
-get ("/scissors") do
-  erb(:lion)
-end
