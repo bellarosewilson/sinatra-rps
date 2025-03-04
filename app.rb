@@ -21,17 +21,5 @@ get("/rock") do
     outcome = "won"
   end
 
-  "
-  <h2>  
-    We played Rock!
-  </h2>
-
-   <h2>  
-    They played #{comp_move}!
-  </h2>
-
-   <h2>  
-    We #{outcome}!
-  </h2>
-  "
+  erb(:zebra)
 end
