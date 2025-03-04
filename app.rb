@@ -2,10 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/") do
-  "
-  <h1>Welcome to Rock-Paper-Scissors! </h1>
-  <p>From Wikipedia:</p>
-  "
+  erb(:homepage)
 end
 
 get("/rock") do
@@ -22,4 +19,12 @@ get("/rock") do
   end
 
   erb(:zebra)
+end
+
+get ("/paper") do
+  erb(:giraffe)
+end
+
+get ("/scissors") do
+  erb(:lion)
 end
