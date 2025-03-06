@@ -1,10 +1,10 @@
-  <% if @comp_move == "rock" %>
+<% if @comp_move == "rock"
     @outcome = "tied"
-  elseif  comp_move == "paper"
+ elseif  comp_move == "paper"
     @outcome = "lost"
   else
     @outcome = "won"
-  end %>
+end %>
 
   <h2>  
     We played Rock!
@@ -23,6 +23,6 @@
   </h2>
 <% else %>
   <h2 style="color: black"> 
-    We <%= @outcome %>!
+    We <%= @outcome 
     </h2>
 <% end %>
