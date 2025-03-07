@@ -52,4 +52,7 @@ get("/scissors") do
 
   erb(:capybara)
 end 
-  
+
+get("/rules") do
+  erb(:rules)  
+end
