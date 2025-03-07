@@ -1,20 +1,13 @@
-<% if @comp_move == "rock"
-    @outcome = "tied"
- elseif  comp_move == "paper"
-    @outcome = "lost"
-  else
-    @outcome = "won"
-end %>
-
-  <h2>  
+ <h2>  
     We played Rock!
-  </h2>
+</h2>
 
-   <h2>  
-    They played <%= @comp_move %>!
+<h2>  
+  They played <%= @comp_move %>!
+</h2>
 
 <% if @outcome == "won" %>
-   <h2 style="color: green"> 
+  <h2 style="color: green"> 
     We <%= @outcome %>!
   </h2>
 <% elseif @outcome == "lost" %>

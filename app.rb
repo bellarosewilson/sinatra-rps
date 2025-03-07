@@ -5,6 +5,9 @@ get("/") do
   erb(:homepage)
 end
 
+
+
+
 get("/rock") do
   moves = ["rock", "paper", "scissors"]
   
