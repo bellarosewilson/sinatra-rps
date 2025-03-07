@@ -2,10 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/") do
-  "
-  <h1> Howdy! </h1>
-  <p>Define some routes in app.rb </p>
-  "
+  erb(:homepage)
 end
 
 get("/rock") do
@@ -15,7 +12,7 @@ get("/rock") do
   
   if @comp_move == "rock"
     @outcome = "tied"
-  elseif  @comp_move == "paper"
+  elsif  @comp_move == "paper"
     @outcome = "lost"
   else
     @outcome = "won"
@@ -23,3 +20,7 @@ get("/rock") do
 
   erb(:zebra)
 end
+
+get("/paper") do
+erb(:giraffe)
+end 
