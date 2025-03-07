@@ -11,11 +11,11 @@ end
 get("/rock") do
   moves = ["rock", "paper", "scissors"]
   
-  comp_move = moves.sample
+  @comp_move = moves.sample
   
-  if comp_move == "rock"
+  if @comp_move == "rock"
     @outcome = "tied"
-  elseif  comp_move == "paper"
+  elseif  @comp_move == "paper"
     @outcome = "lost"
   else
     @outcome = "won"
