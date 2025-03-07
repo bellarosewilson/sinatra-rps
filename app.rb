@@ -2,11 +2,11 @@ require "sinatra"
 require "sinatra/reloader"
 
 get("/") do
-  erb(:homepage)
+  "
+  <h1> Howdy! </h1>
+  <p>Define some routes in app.rb </p>
+  "
 end
-
-
-
 
 get("/rock") do
   moves = ["rock", "paper", "scissors"]
@@ -22,8 +22,4 @@ get("/rock") do
   end
 
   erb(:zebra)
-end
-
-get ("/paper") do
-  erb(:giraffe)
 end
