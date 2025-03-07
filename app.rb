@@ -22,10 +22,34 @@ get("/rock") do
 end
 
 get("/paper") do
-erb(:giraffe)
+  moves = ["rock", "paper", "scissors"]
+  
+  @comp_move = moves.sample
+  
+  if @comp_move == "rock"
+    @outcome = "tied"
+  elsif  @comp_move == "paper"
+    @outcome = "lost"
+  else
+    @outcome = "won"
+  end
+
+  erb(:giraffe)
 end 
 
 get("/scissors") do
+  moves = ["rock", "paper", "scissors"]
+  
+  @comp_move = moves.sample
+  
+  if @comp_move == "rock"
+    @outcome = "tied"
+  elsif  @comp_move == "paper"
+    @outcome = "lost"
+  else
+    @outcome = "won"
+  end
+
   erb(:capybara)
-  end 
+end 
   
