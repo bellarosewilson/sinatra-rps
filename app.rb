@@ -24,3 +24,8 @@ end
 get("/paper") do
 erb(:giraffe)
 end 
+
+get("/scissors") do
+  erb(:capybara)
+  end 
+  
